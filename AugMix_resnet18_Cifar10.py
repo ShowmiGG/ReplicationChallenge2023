@@ -11,11 +11,6 @@ except:
 
     !pip install -q http://download.pytorch.org/whl/{accelerator}/torch-1.0.0-{platform}-linux_x86_64.whl torchvision
 
-try: 
-    import torchbearer
-except:
-    !pip install torchbearer
-
 from torchvision.datasets import ImageFolder
 from torch.utils.data import DataLoader
 from torchvision import transforms 
